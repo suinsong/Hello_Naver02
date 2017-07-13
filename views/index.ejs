@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<% include header.ejs %>
+<script src='/js/search.js'></script>
+</head>
+<body class='w3-light-grey w3-padding-16'>
+
+	<header class='w3-container w3-pink w3-margin'>
+		<h3 class='w3-padding-16'>네이버 API실습</h3>
+
+
+	</header>
+	<article class='w3-container w3-margin w3-padding-16 w3-white'>
+		<section class='w3-margin'>
+			<div class=' w3-col s5 l5 m5'>
+				<input value='book' checked type='radio' id='searchItem'
+					name='searchItem' class='w3-radio'> <label>도서</label> <input
+					value='movie' type='radio' id='searchItem' name='searchItem'
+					class='w3-radio'> <label>영화</label> <input value='news'
+					type='radio' id='searchItem' name='searchItem' class='w3-radio'>
+				<label>뉴스</label> <input value='blog' type='radio' id='searchItem'
+					name='searchItem' class='w3-radio'> <label>블로그</label>
+			</div>
+			<div class=' w3-col s5 l5 m5'>
+				<input type='text' id='searchValue' name='searchValue'
+					class='w3-input w3-border w3-hoverable-light-pink'
+					placeholder='검색어 입력 후 enter'>
+			</div>
+		</section>
+
+		<article class='w3-container w3-margin w3-padding-16 w3-white'>
+			<section id='resultBody' class='w3-margin'>
+			</section>
+
+		</article>
+
+
+
+	</article>
+
+
+
+</body>
+</html>
